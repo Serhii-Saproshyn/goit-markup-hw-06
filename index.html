@@ -62,6 +62,32 @@
                 <use href="./images/symbol-defs.svg#icon-close-black"></use>
               </svg>
             </button>
+            <form class="form">
+              <h2 class="form-title">Залиште свої дані, ми вам передзвонимо</h2>
+              <div class="form-field">
+                <label for="name">Ім'я</label>
+                <input type="text" name="name" id="name" />
+              </div>
+              <div class="form-field">
+                <label for="tel">Телефон</label>
+                <input type="tel" name="tel" id="tel" />
+              </div>
+              <div class="form-field">
+                <label for="email">Пошта</label>
+                <input type="email" name="email" id="email" />
+              </div>
+              <div class="form-field">
+                <label for="comment">Коментар</label>
+                <textarea name="comment" id="comment" placeholder="Введіть текст"></textarea>
+              </div>
+
+              <input type="checkbox" />
+              <label for="check"
+                >Погоджуюся з розсилкою та приймаю <a href="">Умови договору</a></label
+              >
+
+              <button type="submit" class="button primary">Відправити</button>
+            </form>
           </div>
         </div>
       </section>
@@ -497,6 +523,17 @@
             </li>
           </ul>
         </div>
+        <form class="send-field">
+          <div class="footer-field">
+            <label for="email">Підпишіться на розсилку</label>
+            <input type="email" name="email" id="email" placeholder="E-mail" />
+          </div>
+          <button type="submit" class="to-send">
+            Підписатися<svg width="24" height="24" class="send-icon">
+              <use href="./images/symbol-defs.svg#icon-icon_send"></use>
+            </svg>
+          </button>
+        </form>
       </div>
     </footer>
     <script src="./js/modal.js"></script>
