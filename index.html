@@ -65,26 +65,46 @@
             <form class="form">
               <h2 class="form-title">Залиште свої дані, ми вам передзвонимо</h2>
               <div class="form-field">
-                <label for="name">Ім'я</label>
-                <input type="text" name="name" id="name" />
+                <label for="name" class="label">Ім'я</label>
+                <div class="input-icon">
+                  <input type="text" name="name" id="name" />
+                  <svg class="form-icon" width="18" height="18">
+                    <use href="./images/symbol-defs.svg#icon-person"></use>
+                  </svg>
+                </div>
               </div>
               <div class="form-field">
-                <label for="tel">Телефон</label>
-                <input type="tel" name="tel" id="tel" />
+                <label for="tel" class="label">Телефон</label>
+                <div class="input-icon">
+                  <input type="tel" name="tel" id="tel" />
+                  <svg class="form-icon" width="18" height="18">
+                    <use href="./images/symbol-defs.svg#icon-phone"></use>
+                  </svg>
+                </div>
               </div>
               <div class="form-field">
-                <label for="email">Пошта</label>
-                <input type="email" name="email" id="email" />
+                <label for="mail" class="label">Пошта</label>
+                <div class="input-icon">
+                  <input type="email" name="email" id="mail" />
+                  <svg class="form-icon" width="18" height="18">
+                    <use href="./images/symbol-defs.svg#icon-email"></use>
+                  </svg>
+                </div>
               </div>
               <div class="form-field">
-                <label for="comment">Коментар</label>
+                <label for="comment" class="label">Коментар</label>
                 <textarea name="comment" id="comment" placeholder="Введіть текст"></textarea>
               </div>
-
-              <input type="checkbox" />
-              <label for="check"
-                >Погоджуюся з розсилкою та приймаю <a href="">Умови договору</a></label
-              >
+              <div class="check">
+                <input type="checkbox" name="check" id="check" class="checkbox" />
+                <svg width="15" height="15" class="checkbox-icon">
+                  <use href="./images/symbol-defs.svg#icon-check"></use>
+                </svg>
+                <label for="check" class="alo"
+                  >Погоджуюся з розсилкою та приймаю
+                  <a href="" class="contract">Умови договору</a></label
+                >
+              </div>
 
               <button type="submit" class="button primary">Відправити</button>
             </form>
