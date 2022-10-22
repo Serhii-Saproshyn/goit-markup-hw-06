@@ -498,6 +498,7 @@ img {
 
 .backdrop.is-hidden {
   opacity: 0;
+  visibility: hidden;
   scale: 1.8;
   pointer-events: none;
 }
@@ -781,6 +782,10 @@ nav {
   position: relative;
   flex-direction: column;
   text-align: start;
+}
+
+.form-field:not(:last-child) {
+  margin-bottom: 10px;
 }
 
 .input-icon {
